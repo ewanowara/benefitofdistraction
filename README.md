@@ -3,7 +3,8 @@ We present a denoising method which uses regions ignored by attention networks a
 
 Attention networks are commonly used in computer vision and they often perform strongly on diverse vision tasks. In computer vision, the core idea behind attention is that the signal of interest is stronger in some pixels ("foreground"), and by selectively focusing computation on these pixels, networks can extract subtle signals buried in noise and other sources of corruption. Our paper is based on one key observation: in many real-world applications, many sources of corruption, such as illumination and motion are often shared between the "foreground" and the "background" pixels. Can we utilize this to our advantage? We propose the utility of inverse attention networks, which focus on extracting information about these shared sources of corruption. We show that this allows us to build models that effectively suppress shared covariates and amplify signal information, resulting in improved performance. We illustrate this on the task of camera-based physiological measurement where the signal of interest is weak and global illumination variations and motion act as significant shared sources of corruption. We perform experiments on three datasets and show that our approach of inverse attention produces state-of-the-art results, increasing the signal-to-noise ratio by up to 5.8 dB, reducing heart rate and breathing rate estimation errors by as much as 30 %, recovering subtle waveform dynamics, and generalizing from RGB to NIR videos without retraining. 
 
-## Supplementary Material: https://github.com/AnonymousCodeSubmission/Benefit_of_Distraction/blob/master/SupplementaryMaterial.pdf
+## Supplementary Material: 
+https://github.com/AnonymousCodeSubmission/Benefit_of_Distraction/blob/master/SupplementaryMaterial.pdf
 
 ## The architecture of our proposed denoising approach
 <img src = Data/denoising_architecture8_corr.png>
